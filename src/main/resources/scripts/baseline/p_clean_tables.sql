@@ -1,3 +1,5 @@
+-- Copyright (c) 2011, Andrew Eells. All Rights Reserved.
+
 DELIMITER $$
 
 DROP PROCEDURE IF EXISTS p_clean_tables $$

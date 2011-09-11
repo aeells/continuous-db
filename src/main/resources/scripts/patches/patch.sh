@@ -1,3 +1,5 @@
+# Copyright (c) 2011, Andrew Eells. All Rights Reserved.
+
 #!/bin/sh
 
 DB_USER=$1

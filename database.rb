@@ -1,3 +1,4 @@
+# Copyright (c) 2011, Andrew Eells. All Rights Reserved.
 
 def baseline_db_scripts(env)
     db = load_db_config env

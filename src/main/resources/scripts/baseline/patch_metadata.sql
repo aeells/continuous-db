@@ -1,3 +1,5 @@
+-- Copyright (c) 2011, Andrew Eells. All Rights Reserved.
+
 CREATE TABLE patch_metadata (
     release_number          BIGINT        NOT NULL,
     patch_number            VARCHAR(255)  NOT NULL,
