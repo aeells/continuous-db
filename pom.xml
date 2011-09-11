@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.agile-database.continuous-db</groupId>
+    <artifactId>continuous-db</artifactId>
+    <packaging>jar</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <name>continuous-db</name>
+
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <build>
+                <plugins>
+
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>exec-maven-plugin</artifactId>
+                        <version>1.2</version>
+                        <executions>
+                            <execution>
+                                <id>cap</id>
+                                <phase>process-resources</phase>
+                                <goals>
+                                    <goal>exec</goal>
+                                </goals>
+                                <configuration>
+                                    <executable>cap</executable>
+                                    <arguments>
+                                        <argument>local:db-patch-init</argument>
+                                        <argument>local:db-patch</argument>
+                                    </arguments>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+</project>

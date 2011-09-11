@@ -1,0 +1,7 @@
+Assumes MySQL install in /usr/local/mysql/bin/.
+
+> mysql --user=root mysql
+> CREATE USER 'test'@'localhost' IDENTIFIED BY 'test';
+> GRANT ALL PRIVILEGES ON *.* TO 'test'@'localhost' WITH GRANT OPTION;
+> CREATE DATABASE test;
+
