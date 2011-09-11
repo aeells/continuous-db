@@ -1,0 +1,13 @@
+local:
+  user: test
+  password: test
+  host: localhost
+  database: test
+
+# add other databases in your lifecycle as below (demo, stage, prod etc.)
+# note the missing password on production database entry (should prompt)
+
+prod:
+  user: ****
+  host: ****
+  database: ****
