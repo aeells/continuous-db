@@ -1,11 +1,11 @@
 
 require 'database'
-require 'utility'
+require 'utilities'
 
 role :local, "local"
 set :roles, [:local]
 
-# Local deployment namespace.
+# local deployment namespace
 [:local].each do |env|
     namespace env do
 
